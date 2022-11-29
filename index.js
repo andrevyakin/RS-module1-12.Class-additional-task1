@@ -24,7 +24,7 @@ class Dictionary {
     }
 
     add(word, description) {
-        if (!Object.keys(this.allWords).some(key => key === word))
+        if (!this.allWords[word])
             this.#_addNewWord(word, description);
     }
 
